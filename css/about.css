@@ -1,0 +1,29 @@
+.about{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 7rem;
+    position: fixed;
+    
+}
+
+.about .about_image img{
+    width: 800px;
+}
+
+.about .about_tag h1{
+    font-size: 75px;
+    position: relative;
+    background-origin: 35px;
+}
+
+.about .about_tag p{
+    line-height: 30px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 25px;
+}

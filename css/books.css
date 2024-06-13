@@ -1,0 +1,21 @@
+*{
+	text-decoration: none !important;
+}
+
+.pdf-list {
+	width: 80%;
+}
+.card {
+	width: 18rem;
+}
+.btn{
+    margin-left: 4.5rem;
+	/* set to 1.5 rem in premium section */
+
+	/* <!-- button to be added in premium section only -->
+    <!-- <a href="../uploads/files/<?=$book['file'] ?>#toolbar=0" class="btn btn-primary">Download</a> --> */
+}
+
+.category .list-group{
+	width: 200px;
+}

@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+:root{
+    --green: #27ae60;
+    --dark-color: #219150;
+    --black: #444;
+    --light-color: #666;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--black);
+}
+
+html{
+    font-size: 80%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+/* nav bar */
+
+header .header1{
+    background: var(--green);
+    padding: 1.5rem 9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header1.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header .header1 .navbar {
+    text-align: center;
+}
+
+header .header1 .navbar a{
+    color: #fff;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+
+header .header1 .navbar a:hover{
+    background: var(--dark-color);
+}
+
+header .header1 .icons{
+    margin-top: 10px;
+    cursor: pointer;
+    color: #f9ff00;
+    font-size: 2rem;
+}
+
+
+
+/* nav bar */
+
+/* home section */
+section{
+    padding: 5rem 9%;
+   
+}
+.home{
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section  .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background: var(--green);
+}
+
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .row .content{
+flex: 1 1 42rem;
+}
+
+.home .row .books-slider{
+    text-align: center;
+    margin-top: 2rem;
+flex: 1 1 42rem;
+}
+
+.home .row .books-slider a:hover img{
+    transform: scale(.9);
+}
+
+.home .row .content h1{
+    color: var(--black);
+    font-size: 7.5rem;
+    margin-bottom: 10rem;
+}
+
+.home .row .content h6{
+    color: var(--black);
+    font-size: 4.5rem;
+}
+
+.home .row .content h1 span{
+    color: red;
+    font-size: 7.5rem;
+}
+
+.home .row .books-slider a img{
+    padding-right: 30px;
+    padding-bottom: 2rem;
+}
+
+/* home section */
+
+
+/* footer section */
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap: 1.5rem;
+  text-align: center;
+}
+
+.footer .box-container .box{
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0.1rem;
+    padding-top: 2.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--green);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .share{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--green);
+    margin: 0 .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background: var(--black);
+}
+
+.footer .credit{
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0.1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.footer .credit span{
+    color: var(--green);
+}
+/* footer section */
+
